@@ -1,0 +1,121 @@
+/* Common styles for both mobile and laptop */
+body, html {
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color:white;
+}
+h2, p {
+    text-align: center;
+    color: black;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .background-container {
+        background-image: url(srmgpc.jpg); /* Set background image for mobile */
+        background-repeat: repeat;
+        background-size: contain; /* Ensure the entire background image fits within the container */
+        background-position: center; /* Center the background image */
+        height: 100vh;
+        justify-content: center;
+        align-items: center; /* Center vertically */
+        text-align: center;
+    }
+     #main {
+         padding:1px;
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        border-radius: 10px;
+        max-width: 800px;
+         margin-left:10px ;
+        margin-right:10px ;
+    }
+    #welcome{
+        background-color: #131356;
+        height: 15vh;
+         display: flex;
+        justify-content: center;
+        align-items: center; /* Center vertically */
+        text-align: center;
+        gap:2vw;
+    }
+    img{
+        height:15vh;
+        border-radius:50%;
+    }
+     #buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #buttons button {
+        color:white;
+        border-radius:7px;
+        height:6vh;
+        background-color:#101b66;
+        margin: 0 10px; /* Add margin between buttons */
+    }
+     #buttons button:hover{
+        cursor:pointer;
+        color:#160c47;
+    }
+}
+
+/* Styles for laptop screens */
+@media (min-width: 769px) {
+    .background-container {
+        background-image: url(srmgpc.jpg); /* Set background image for laptop */
+        background-repeat: repeat;
+        background-size: contain; /* Ensure the entire background image fits within the container */
+        background-position: center; /* Center the background image */
+        height: 100vh;
+        justify-content: center;
+        align-items: center; /* Center vertically */
+        text-align: center;
+    }
+
+    #main {
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1500px;
+        margin-left:20px ;
+        margin-right:20px ;
+
+    
+    }
+    #welcome {
+    background-color: #131356;
+    height: 15vh;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+img{
+        height:15vh;
+        border-radius:50%;
+}
+     #buttons {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #buttons button {
+        color:white;
+        border-radius:7px;
+        height:6vh;
+        width:20vw;
+        background-color:#131356;
+        margin: 0 10px; /* Add margin between buttons */
+    }
+    #buttons button:hover{
+        cursor:pointer;
+        color:#0e0e31;
+    }
+
+}
